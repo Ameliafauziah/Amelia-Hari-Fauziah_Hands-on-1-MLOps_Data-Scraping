@@ -60,6 +60,10 @@ This project aims to develop a course and certification recommendation system us
    
 - TF-IDF (TfidfVectorizer) was used to convert course descriptions into numerical feature vectors.
 
+- Cosine similarity was calculated to measure the closeness between course contents.
+
+- Based on these similarities, a function was implemented to recommend the top N most similar courses.
+
 > **Reflection: Challenges & Limitations**
 
 - **Challenge:** The website uses **lazy loading**, meaning only a portion of courses appear in the raw HTML.
@@ -67,7 +71,3 @@ This project aims to develop a course and certification recommendation system us
 - **Solution Options:**
   - Use **Selenium** to automate scrolling and trigger JavaScript-rendered content.
   - Explore whether the site offers a **REST API** to access full data programmatically.
-
-- Cosine similarity was calculated to measure the closeness between course contents.
-
-- Based on these similarities, a function was implemented to recommend the top N most similar courses.
